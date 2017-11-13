@@ -1,0 +1,47 @@
+
+
+a {color:#333; text-decoration:none}
+a:hover {color:#ccc; text-decoration:none}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}  
+#boxes .window {
+	border-radius:2em;
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:210px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  
+}
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+#boxes p{
+	margin:5px;
+	font-size:20px;
+	color:steelblue;
+	font-weight:bold;
+	text-align:center;
+	
+}
+#boxes #course{
+	margin-left:40px;
+	font-size:17px;
+	color:maroon;
+	font-weight:bold;
+	
+}
