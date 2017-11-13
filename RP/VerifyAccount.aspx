@@ -21,7 +21,7 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
       
-      <li><a href="#">Contact Me</a></li>
+      <li><a href="#">Help</a></li>
       </ul>
   </div>
 </nav>
