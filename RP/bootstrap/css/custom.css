@@ -1,0 +1,221 @@
+﻿   
+
+       
+        .mid{
+            align-content:center;
+            text-align:center;
+        }
+
+        .Rp{
+            font-size:60px;
+           margin-top:40px;
+        }
+        .jumbotron{
+            margin-top:80px;
+            background-color:#3BAFDA;
+
+        }
+        .jumbotron p,li,a{
+            font-size:15px;
+            color:white;
+            list-style:none;
+        }
+        .home{
+           z-index:3;
+          color:white;
+        opacity: 3;
+        text-align:center;
+       
+     margin-top:-40%;
+  
+        }
+        .home h1{
+         z-index:3;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .home p{
+            font-size:18px;
+           
+                       }
+        .info{
+            margin:300px auto 0 3%;
+            text-align:center;
+            
+        }
+        .info img{
+          
+                   height:80px;
+                   width:80px;
+              
+        }
+        .embed-responsive{
+            margin-top:10%;
+        }
+        .modal{
+            text-align:center;
+            color:black;
+        }
+        .navbar-brand{
+  padding: 0px;
+
+  
+}
+
+
+        .modal p{
+            text-align:left;
+            font-size:10px;
+        }
+     
+       .modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.signinmodal button{
+    text-align:center;
+    margin-left:40%;
+}
+.signinmodal a{
+    color:royalblue;
+}
+#rpName{
+    font-size:40px;
+    font-weight:bold;
+    color:midnightblue;
+}
+   
+#myCarousel{
+    margin-top:-20px;
+    
+  
+}
+
+.navbar{
+   background-color:black;
+   color:white;
+   border-color:black;
+   
+}
+.nav.navbar-nav li a {
+    color: white;
+   
+}
+.nav.navbar-nav li a:hover {
+    
+    font-size:medium;
+    color: orange;
+    opacity:.7;
+   
+
+
+}
+.nav.navbar-nav li a:visited {
+    color: aliceblue;
+    
+
+}
+
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+     
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 3;
+}
+
+.carousel-control {
+    opacity: 3;
+}
+
+.carousel-control:hover
+ {
+    opacity: 3;
+    color:orange;
+}
+
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../images/slider-8.jpg);
+}
+.fade-carousel .slides .slide-2 {
+  background-image:url(../images/slider-4.jpg);
+ 
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(../images/slider-7.jpg);
+ 
+}
+

@@ -94,10 +94,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap\css\custom.css" />
+    <Content Include="bootstrap\images\easy.png" />
+    <Content Include="bootstrap\images\engagement.png" />
+    <Content Include="bootstrap\images\icon-assign.png" />
+    <Content Include="bootstrap\images\icon-bulb.png" />
+    <Content Include="bootstrap\images\icon-collaboration.png" />
+    <Content Include="bootstrap\images\icon-graph.png" />
+    <Content Include="bootstrap\images\icon-lock.png" />
+    <Content Include="bootstrap\images\icon-pr.png" />
+    <Content Include="bootstrap\images\icon-rocket.png" />
+    <Content Include="bootstrap\images\icon-time.png" />
+    <Content Include="bootstrap\images\oneplace.png" />
+    <Content Include="bootstrap\images\portfolio-img5.jpg" />
+    <Content Include="bootstrap\images\remote.png" />
+    <Content Include="bootstrap\images\Rp-small.jpg" />
+    <Content Include="bootstrap\images\slider-2.jpg" />
+    <Content Include="bootstrap\images\slider-4.jpg" />
+    <Content Include="bootstrap\images\slider-5.jpg" />
+    <Content Include="bootstrap\images\slider-6.jpg" />
+    <Content Include="bootstrap\images\slider-7.jpg" />
+    <Content Include="bootstrap\images\slider-8.jpg" />
+    <Content Include="bootstrap\images\slider-9.jpg" />
+    <Content Include="bootstrap\images\slider3.png" />
+    <Content Include="bootstrap\images\slider4.png" />
+    <Content Include="bootstrap\images\slider6.jpg" />
+    <Content Include="bootstrap\images\wall.jpg" />
+    <Content Include="bootstrap\images\wallpaper.jpg" />
+    <Content Include="bootstrap\images\wallpaper1.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="signUpDetails.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="bootstrap\css\bootstrap-grid.min.css.map" />
@@ -124,7 +153,6 @@
     <Content Include="bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
-    <Content Include="bootstrap\css\dialog-box.css" />
     <Content Include="bootstrap\css\StudentPersonal.css" />
     <Content Include="bootstrap\css\StylesMainpage.css" />
     <Content Include="bootstrap\js\BarChart.js" />
@@ -132,14 +160,19 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery.min.js" />
     <Content Include="bootstrap\js\npm.js" />
-    <Content Include="bootstrap\js\previewImage.js" />
-    <Content Include="bootstrap\js\showDialogBox.js" />
     <Content Include="VerifyAccount.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signUpDetails.aspx.cs">
+      <DependentUpon>signUpDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signUpDetails.aspx.designer.cs">
+      <DependentUpon>signUpDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

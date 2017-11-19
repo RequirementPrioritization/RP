@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace RP
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class signUpDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void SignUp_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }

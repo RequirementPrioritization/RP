@@ -12,100 +12,26 @@
    <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link href="bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet" />
-  <script src="bootstrap\js\showDialogBox.js"></script>
-    <link href="bootstrap/css/dialog-box.css" rel="stylesheet" />
-    <style>
-       
-        .mid{
-            align-content:center;
-            text-align:center;
-        }
-        .Rp{
-            font-size:60px;
-           
-        }
-        .jumbotron{
-            margin-top:80px;
-            background-color:#3BAFDA;
-
-        }
-        .jumbotron p,li,a{
-            font-size:15px;
-            color:white;
-            list-style:none;
-        }
-        #home{
-            margin-top:-20px;
-            background-image: url("images/wallpaper.jpg");
-              background-repeat: no-repeat;
+  <link href="bootstrap/css/custom.css" rel="stylesheet" />
     
-    background-position: center; 
-    max-width: 100%;
-    height:auto;
-       color:white;
-   
-        }
-        #home p{
-            font-size:18px;
-        }
-        .info{
-            margin:50px auto 0 3%;
-            text-align:center;
-            
-        }
-        .info img{
-          
-                   height:80px;
-                   width:80px;
-              
-        }
-        .embed-responsive{
-            margin-top:10%;
-        }
-        .modal{
-            text-align:center;
-            color:black;
-        }
-        .modal p{
-            text-align:left;
-            font-size:10px;
-        }
-     
-       .modal {
-  text-align: center;
-  padding: 0!important;
-}
-
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-.signinmodal button{
-    text-align:center;
-    margin-left:40%;
-}
-.signinmodal a{
-    color:royalblue;
-}
-
-    </style>
+  
 </head>
 <body>
     
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">RP</a>
+      
+        <a class="navbar-brand" href="#">
+          <img src="images/Rp-small.jpg" class="img-circle" alt="logo" width="60" height="50"/></a>
+       
+       
     </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav">
+             <li id="rpName"> <a href="#">Requirement Prioritization: A webtool</a></li>
+            </ul>
+          
     <ul class="nav navbar-nav navbar-right">
       
       <li><a href="#">Tour</a></li>
@@ -113,25 +39,72 @@
       <li><a href="#"><span class="glyphicon glyphicon-user" data-toggle="modal" data-target="#signupModal">SignUp</span> </a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#signinModal">Login</span> </a></li>
     </ul>
+          </div>
   </div>
 </nav>
 
+   <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       -->
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="myCarousel">
+       <div class="overlay"></div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-    <section id="home">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+        <div class="slide-1"></div>
+      
+        <div class="carousel-caption">
+        <h3>Increase Productivity</h3>
+        <p>Also Work from Remote Location</p>
+      </div>
+    </div>
+
+    <div class="item slides">
+      <div class="slide-2"></div>
+    </div>
+
+    <div class="item  slides">
+      <div class="slide-3"></div>
+        <div class="carousel-caption">
+        <a href="#video"><h3 >Click Here</h3></a>
+        <p>Learn how to use webtool</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+   
+   
+    <div class="home">
         <br />
     <br />
-
-<div class="container">
-  <div class="col-xs-2"></div>
-    <div class="col-xs-8">
-         <div style="text-align:center;">
+        
+<div class="container" >
+  <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+         
    <h1> <span class="Rp">Requirement Prioritization</span> <br />
    A web tool
    </h1>
         
-  <p style="text-align:center;">Brainstorm, organize, prioritize and act on the best ideas, in the same 
+  <p style="text-align:center;">Webtool, organize, prioritize and act on the best ideas, in the same 
       room or around the world, on a realtime sticky note whiteboard.</p>
-</div>
 
         
     <!-- Form starts here -->
@@ -140,9 +113,9 @@
         <br />
         <br />
           <div class="input-group form-group-lg">
-      <asp:TextBox ID="TextBox1" runat="server" placeholder="Email Address" Type="Email" Class="form-control" ></asp:TextBox>
+      <asp:TextBox ID="txtSignupEmail" runat="server" placeholder="Email Address" Type="Email" Class="form-control" ></asp:TextBox>
       <span class="input-group-btn">
-        <asp:Button ID="Button2" runat="server" class="btn btn-secondary btn-success btn-lg" Text="Sign Up" />
+        <asp:Button ID="btnSignup" runat="server" class="btn btn-secondary btn-success btn-lg" Text="Sign Up" OnClick="SignUp_Click" />
       </span>
     </div>
        
@@ -150,7 +123,7 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
         
         </asp:ContentPlaceHolder>
-    </div>
+  
     
 
          <!-- Sign Up Modal -->
@@ -171,7 +144,7 @@
        <div class="input-group">
       <asp:TextBox ID="txtEmail2" runat="server" placeholder="Email Address" Type="Email" Class="form-control" ></asp:TextBox>
       <span class="input-group-btn">
-        <asp:Button ID="Button1" runat="server" class="btn btn-secondary btn-success" Text="Sign Up" />
+        <asp:Button ID="Button1" runat="server" class="btn btn-secondary btn-success" Text="Sign Up" OnClick="SignUp_Click" />
       </span>
     </div>
   
@@ -190,7 +163,7 @@
 
 
          <!-- Sign IN Modal -->
-<section class="signinmodal">
+<div class="signinmodal">
 <div id="signinModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -228,18 +201,18 @@
 
   </div>
 </div>
-    </section>
+    </div>
     <!-- Sign In ends here-->
-
+    
 
         </form>
         <!-- Form ends-->
-
+    </div>
         </div>
     <div class="col-xs-2"></div>
-    </div>
+   </div>
         <br /><br /><br /><br /><br /><br />
-        </section>
+       
     
     <section class="info">
     <div class="container">
@@ -278,18 +251,20 @@
 
         
        <!--Video-->
+        
     <div class="row">
         <div class="col-xs-1"></div>
   <div class="col-xs-10">
         
-
+      
         <div class="embed-responsive embed-responsive-16by9 z-depth-5">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hveT564yNIg" allowfullscreen></iframe>
-        </div>
+           <span id="video"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hveT564yNIg" allowfullscreen></iframe>
+        </span>  </div>
 
     </div>
         <div class="col-xs-1"></div>
         </div>
+       
     <!--Video-->
 
         <br/><br /><br/><br /><br/><br />
